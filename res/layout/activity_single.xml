@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/list_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布人"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示标题"
+            android:textColor="#000088"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/list_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示内容"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/list_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="发布日期"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top"
+            android:hint="评论"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:minLines="1"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/commen_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论列表"
+            android:textSize="12dp" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fragmentactivity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.activity.RegisteActivity"
+            android:label="@string/title_activity_registe" >
+        </activity>
+        <activity
+            android:name="com.activity.UpdateActivity"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name="com.activity.MyarticleActivity"
+            android:label="@string/title_activity_myarticle" >
+        </activity>
+        <activity
+            android:name="com.activity.MynoteActivity"
+            android:label="@string/title_activity_note" >
+        </activity>
+        <activity
+            android:name="com.activity.Single"
+            android:label="@string/title_activity_single" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.etc.activity.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/register_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/register_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名号"
+            android:inputType="text"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/register_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓    名："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/register_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入姓名"
+            android:inputType="text"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/register_sex_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性         别："
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男" 
+                />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/register_custype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户类型："
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg_custype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="教员" />
+
+            <RadioButton
+                android:id="@+id/rb_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="学员" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/register_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密         码："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/register_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="text"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/register_spwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/register_spwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请确认密码无误"
+            android:inputType="text"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/entrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入学(职)时间："
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/entr_showdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置日期" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毕业时间："
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/grad_showdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置日期" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:text="保   存" >
+    </Button>
+
+</LinearLayout>
